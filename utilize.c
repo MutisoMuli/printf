@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * is_printable - Checks if a char in the prog' is printable
- * @c: The char int he prog to be evalauted
- * Return: retunr 1 if char is printable or 0 if not
- */
+  * is_printable - Checks if a character in the program is printable
+  * @c: The character in the program to be evaluated
+  * Return: Returns 1 if the character is printable or 0 if not
+  */
 int is_printable(char c)
 {
 	if (c >= 32 && c < 127)
@@ -14,13 +14,12 @@ int is_printable(char c)
 }
 
 /**
- * adds_hexacodes - Adds ascci in hexadecimal code to buffer
- * @buffer: Array of chars in the program
- * @i: Index at which to start adding ascci in hexadecimal
- * format
- * @ascii_code: ASSCI CODE
- * Return: Always three (3)
- */
+  * adds_hexacodes - Adds ASCII in hexadecimal code to the buffer
+  * @buffer: Array of characters in the program
+  * @i: Index at which to start adding ASCII in hexadecimal format
+  * @ascii_code: ASCII code
+  * Return: Always three (3)
+  */
 int adds_hexacodes(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
@@ -38,10 +37,10 @@ int adds_hexacodes(char ascii_code, char buffer[], int i)
 }
 
 /**
- * is_digits - Makes sure char is a digit
- * @c: Char to be evaluated in the program
- * Return: 1 if char is a digit and zero(0) if not
- */
+  * is_digits - Ensures that a character is a digit
+  * @c: Character to be evaluated in the program
+  * Return: 1 if the character is a digit and 0 if not
+  */
 int is_digits(char c)
 {
 	if (c >= '0' && c <= '9')
@@ -51,11 +50,11 @@ int is_digits(char c)
 }
 
 /**
- * changes_number_size - Casts a # to the specified size
- * @num: # to be casted.
- * @size: The # indicating the type to be casted.
- * Return: Casted value of num in the program
- */
+  * changes_number_size - Casts a number to the specified size
+  * @num: Number to be casted
+  * @size: The number indicating the type to be casted
+  * Return: Casted value of num in the program
+  */
 long int changes_number_size(long int num, int size)
 {
 	if (size == S_LONG)
@@ -67,11 +66,11 @@ long int changes_number_size(long int num, int size)
 }
 
 /**
- * changes_unsgnd_size - Casts a # to the specified size
- * @num: The # to be casted
- * @size: The # indicating the type to be casted
- * Return: Casted value of num in the program
- */
+  * changes_unsgnd_size - Casts a number to the specified size
+  * @num: The number to be casted
+  * @size: The number indicating the type to be casted
+  * Return: Casted value of num in the program
+  */
 long int changes_unsgnd_size(unsigned long int num, int size)
 {
 	if (size == S_LONG)

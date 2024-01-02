@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * deals_with_write_char - Outputs a str
- * @c: The type of Chars in the code
- * @buffer: Buffer array to handle print function
- * @flags:  Enumerates dynamic flags
- * @width: Secures width in the code
- * @precision: precision specifier in the code
- * @size: Size specifier in the code
- * Return: The # of chars outputed
- */
+  * deals_with_write_char - Outputs a string
+  * @c: Type of characters in the code
+  * @buffer: Buffer array for handling print function
+  * @flags: Enumerates dynamic flags
+  * @width: Ensures width in the code
+  * @precision: Precision specifier in the code
+  * @size: Size specifier in the code
+  * Return: The number of characters outputted
+  */
 int deals_with_write_char(char c, char buffer[],
 		int flags, int width, int precision, int size)
 {/* char is stored at left and paddind at buffer's right */
@@ -41,16 +41,16 @@ int deals_with_write_char(char c, char buffer[],
 }
 
 /**
- * output_numbers - outputs a str
- * @is_negative: Lists of args
- * @ind: The type of chars in the code
- * @buffer: Buffer array to handle print function
- * @flags:  Enumerates dynamic flags
- * @width: secures width in the code
- * @precision: precision specifier in the oode
- * @size: Size specifier in the code
- * Return: The # of chars outputed
- */
+  * output_numbers - Outputs a string
+  * @is_negative: List of arguments
+  * @ind: Type of characters in the code
+  * @buffer: Buffer array for handling print function
+  * @flags: Enumerates dynamic flags
+  * @width: Ensures width in the code
+  * @precision: Precision specifier in the code
+  * @size: Size specifier in the code
+  * Return: The number of characters outputted
+  */
 int output_numbers(int is_negative, int ind, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -72,17 +72,17 @@ int output_numbers(int is_negative, int ind, char buffer[],
 }
 
 /**
- * writes_nums - Write a # in the code using a bufffer
- * @ind: Index at which the # starts on the buffer
- * @buffer: The buffer in the code
- * @flags: Flags inthe code
- * @width: width of the code
- * @prec: Precision specifie in the coder
- * @length: The # length in the code
- * @padd: Pading char in the code
- * @extra_c: Extra char in the code
- * Return: The # of chars outputed
- */
+  * writes_nums - Writes a number in the code using a buffer
+  * @ind: Index at which the number starts in the buffer
+  * @buffer: The buffer in the code
+  * @flags: Flags in the code
+  * @width: Width of the code
+  * @prec: Precision specified in the code
+  * @length: The number's length in the code
+  * @padd: Padding char in the code
+  * @extra_c: Extra char in the code
+  * Return: The number of characters outputted
+  */
 int writes_nums(int ind, char buffer[],
 		int flags, int width, int prec,
 		int length, char padd, char extra_c)
@@ -130,16 +130,16 @@ int writes_nums(int ind, char buffer[],
 }
 
 /**
- * output_unsigned - outputs an unsigned #
- * @is_negative: The # indicating if the num is -ve
- * @ind: Index at which the # starts in the buffer
- * @buffer: Array of chars in the code
- * @flags: Flags specifiers in the code
- * @width: Width specifier in the code
- * @precision: Precision specifier in the code
- * @size: Size specifier in the code
- * Return: The # of written chars
- */
+  * output_unsigned - Outputs an unsigned number
+  * @is_negative: The indicator if the number is negative
+  * @ind: Index at which the number starts in the buffer
+  * @buffer: Array of characters in the code
+  * @flags: Flag specifiers in the code
+  * @width: Width specifier in the code
+  * @precision: Precision specifier in the code
+  * @size: Size specifier in the code
+  * Return: The number of written characters
+  */
 int output_unsigned(int is_negative, int ind,
 		char buffer[],
 		int flags, int width, int precision, int size)
@@ -180,19 +180,18 @@ int output_unsigned(int is_negative, int ind,
 	}
 	return (write(1, &buffer[ind], length));
 }
-
 /**
- * writes_pointers - Outputs  memory address
- * @buffer: Arrays of chars inthe code
- * @ind: Index at which the # starts in the buffer
- * @length: Length of # in the code
- * @width: Width specifier in the code
- * @flags: Flags specifier in the code
- * @padd: Char reppin the padding in the code
- * @extra_c: Char repping extra chars in the code
- * @padd_start: Index at which padding should start
- * Return: The # of written chars.
- */
+  * writes_pointers - Outputs a memory address
+  * @buffer: Array of characters in the code
+  * @ind: Index at which the address starts in the buffer
+  * @length: Length of the address in the code
+  * @width: Width specifier in the code
+  * @flags: Flags specifier in the code
+  * @padd: Char representing the padding in the code
+  * @extra_c: Char representing extra characters in the code
+  * @padd_start: Index at which padding should start
+  * Return: The number of written characters
+  */
 int writes_pointers(char buffer[], int ind, int length,
 		int width, int flags, char padd, char extra_c, int padd_start)
 {

@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * secure_flags - Counts dynamic flags
- * @format: Forms the string to print the arguements
- * @i: takes a parameter
- * Return: The flags:
- */
+  * secure_flags - Counts dynamic flags
+  * @format: String format used for argument printing
+  * @i: Parameter to be considered
+  * Return: The determined flags
+  */
 int secure_flags(const char *format, int *i)
 {
 	/* - + 0 # ' ' */

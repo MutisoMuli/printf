@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * secure_size - Enumerates the size to cast to the arg
- * @format: Formatted str to print the args
- * @i: List of args to be outputed
- * Return: The precision in the code
- */
+  * secure_size - Enumerates the size to cast to the argument
+  * @format: Formatted string to print the arguments
+  * @i: List of arguments to be outputted
+  * Return: The size specifier in the code
+  */
 int secure_size(const char *format, int *i)
 {
 	int curr_i = *i + 1;

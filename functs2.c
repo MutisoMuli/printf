@@ -1,14 +1,15 @@
 #include "main.h"
+
 /**
- * output_pointers - Prints the val pointed variable by a pointer
- * @types: List a of args
- * @buffer: Buffer array to handle print functs
- * @flags:  Computes active flags
- * @width: secures the width
- * @precision: Precision specs
- * @size: Size specifier in the code
- * Return: The # of chars ouputed
- */
+  * output_pointers - Prints the value pointed to by a pointer variable
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functions
+  * @flags: Computes active flags
+  * @width: Ensures the width
+  * @precision: Precision specifications
+  * @size: Size specifier in the code
+  * Return: The number of characters outputted
+  */
 int output_pointers(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -47,16 +48,18 @@ int output_pointers(va_list types, char buffer[],
 	return (writes_pointers(buffer, ind, length,
 				width, flags, padd, extra_c, padd_start));
 }
+
 /**
- * output_nonprintables - Lithos the ascii codes in hexa of non printable chars
- * @types: Lists of args
- * @buffer: Buffer array to handle print functs
- * @flags:  Enumerates dynamic flags
- * @width: Secures the width
- * @precision: Precision specs
- * @size: Size specs-fier
- * Return: The # of chars lithoed
- */
+  * output_nonprintables - Displays the ASCII codes in
+  * hexadecimal of non-printable characters
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functions
+  * @flags: Enumerates dynamic flags
+  * @width: Ensures the width
+  * @precision: Precision specifications
+  * @size: Size specifier
+  * Return: The number of characters displayed
+  */
 int output_nonprintables(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -84,17 +87,17 @@ int output_nonprintables(va_list types, char buffer[],
 
 	return (write(1, buffer, i + offset));
 }
-/**
- * output_reverse - Outputs a string in  reverse format
- * @types: Lists of args
- * @buffer: Buffer array to handle print functionalities
- * @flags:  Determiness active flags
- * @width: Secures the width
- * @precision: Precision specs
- * @size: Size specifier
- * Return: The #s of chars outputed
- */
 
+/**
+  * output_reverse - Outputs a string in reverse format
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functionalities
+  * @flags: Determines active flags
+  * @width: Ensures the width
+  * @precision: Precision specifications
+  * @size: Size specifier
+  * Return: The number of characters outputted
+  */
 int output_reverse(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -125,16 +128,17 @@ int output_reverse(va_list types, char buffer[],
 	}
 	return (count);
 }
+
 /**
- * output_rotate_str - prints a string in rot13.
- * @types: Lists of args
- * @buffer: Buffer array to handle print functionalities
- * @flags:  Enumerates dynamic flags
- * @width: gets the width
- * @precision: Precision specs
- * @size: Size specs-fier
- * Return: The # of chars printed
- */
+  * output_rotate_str - Prints a string in rot13.
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functionalities
+  * @flags: Enumerates dynamic flags
+  * @width: Gets the width
+  * @precision: Precision specifications
+  * @size: Size specifier
+  * Return: The number of characters printed
+  */
 int output_rotate_str(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {

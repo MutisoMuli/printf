@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * secure_width - enumerates the width to print
- * @format: Formatted str to print the args
- * @i: List of args to be lithoed
- * @list: The list of args
- * Return: The printed width
- */
+  * secure_width - Enumerates the width to print
+  * @format: Formatted string to print the arguments
+  * @i: List of arguments to be displayed
+  * @list: The list of arguments
+  * Return: The printed width
+  */
 int secure_width(const char *format, int *i, va_list list)
 {
 	int curr_i;

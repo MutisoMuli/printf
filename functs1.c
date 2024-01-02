@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_unsigned - Outputs the allocated unsigned #
- * @types: List a of arguements in the function
- * @buffer: Buffer array to deal with print function
- * @flags:  Enumerates active flags
- * @width: secures  width in the function
- * @precision: The precision specs
- * @size: Size specs-fier
- * Return: The # of characters outputed
- */
+  * print_unsigned - Outputs the assigned unsigned number
+  * @types: List of arguments in the function
+  * @buffer: Buffer array for handling the print function
+  * @flags: Enumerates active flags
+  * @width: Ensures width in the function
+  * @precision: Precision specifications
+  * @size: Size specifier
+  * Return: The number of characters outputted
+  */
 int print_unsigned(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -33,16 +33,16 @@ int print_unsigned(va_list types, char buffer[],
 }
 
 /**
- * output_octal - Prints an unsigned # in octal notation
- * @types: Lists of arguements
- * @buffer: Buffer array to handle print funct in the code
- * block
- * @flags:  Computes active flags
- * @width: Aquires the width of a funct
- * @precision: Precision specs-fication
- * @size: Size specifier in the funct
- * Return: # of characters outputed
- */
+  * output_octal - Prints an unsigned number in octal notation
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print function in the code block
+  * @flags: Computes active flags
+  * @width: Acquires the width of a function
+  * @precision: Precision specifications
+  * @size: Size specifier in the function
+  * Return: Number of characters outputted
+  */
+
 int output_octal(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -70,16 +70,17 @@ int output_octal(va_list types, char buffer[],
 	i++;
 	return (output_unsigned(0, i, buffer, flags, width, precision, size));
 }
+
 /**
- * output_hexadecimal - Prints an unsigned # in hexadecimal notation
- * @types: Lists of arguements
- * @buffer: Buffer array to handle print functions
- * @flags:  Calculates active flags
- * @width: Enumerates width
- * @precision: Disntinctness specification
- * @size: Size specs-fier
- * Return: # of characters outputed
- */
+  * output_hexadecimal - Prints an unsigned number in hexadecimal notation
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functions
+  * @flags: Calculates active flags
+  * @width: Enumerates width
+  * @precision: Distinctness specification
+  * @size: Size specifier
+  * Return: Number of characters outputted
+  */
 int output_hexadecimal(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -87,34 +88,34 @@ int output_hexadecimal(va_list types, char buffer[],
 				flags, 'x', width, precision, size));
 }
 /**
- * output_upper_hexa - Outputs an unsigned number in upper hexadecimal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of characters printed
- */
+  * output_hexadecimal - Prints an unsigned number in hexadecimal notation
+  * @types: List of arguments
+  * @buffer: Buffer array for handling print functions
+  * @flags: Calculates active flags
+  * @width: Specifies the width
+  * @precision: Distinctness specification
+  * @size: Size specifier
+  * Return: Number of characters outputted
+  */
 int output_upper_hexa(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	return (output_hexas(types, "0123456789ABCDEF", buffer,
 				flags, 'X', width, precision, size));
 }
+
 /**
- * output_hexas - Prints a hexadecimal #s in lower or upper
- * @types: Lists  arguements
- * @map_to: Array of values to map the # to
- * @buffer: Buffer array to handle print functs
- * @flags:  Computes active flags
- * @flag_ch: Computes active flags
- * @width: Secures width
- * @precision: Distinctiveness specs
- * @size: Size specs-fiers
- * @size: The # size specs
- * Return:  of characters printed
- */
+  * output_hexas - Prints a hexadecimal number in lower or upper case
+  * @types: Lists arguments
+  * @map_to: Array of values to map the number to
+  * @buffer: Buffer array for handling print functions
+  * @flags: Computes active flags
+  * @flag_ch: Computes active flags
+  * @width: Ensures width
+  * @precision: Distinctiveness specifications
+  * @size: Size specifications
+  * Return: Number of characters printed
+  */
 int output_hexas(va_list types, char map_to[], char buffer[],
 			int flags, char flag_ch, int width, int precision, int size)
 {

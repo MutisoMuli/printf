@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * secure_precision - Enumerates the precision for printing in the
- * function
- * @format: Formatted str to print the args into
- * @i: List of args to be lithoed
- * @list: list of args.
- * Return: The precision in the code
- */
+  * secure_precision - Enumerates the precision for printing in the function
+  * @format: Formatted string to print the arguments into
+  * @i: List of arguments to be displayed
+  * @list: List of arguments
+  * Return: The precision in the code
+  */
 int secure_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
